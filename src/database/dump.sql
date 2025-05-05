@@ -11,7 +11,7 @@ CREATE TABLE produtores_fisicos (
     id_usuario INT UNIQUE REFERENCES usuarios(id_usuario) ON DELETE CASCADE,
     nome_completo VARCHAR(255) NOT NULL,
     data_nascimento DATE NOT NULL,
-    cpf VARCHAR(11) UNIQUE NOT NULL,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
     endereco TEXT NOT NULL
 );
 
